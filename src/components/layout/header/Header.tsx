@@ -11,9 +11,7 @@ const Header: FC = () => {
           <nav>
             {links.map((item, index) => {
               <div key={index}>
-                <a href="#">home</a>
-                <a href="#">about</a>
-                <a href="#">admin</a>
+                <a href={item.link}>{item.title}</a>
               </div>;
             })}
           </nav>
